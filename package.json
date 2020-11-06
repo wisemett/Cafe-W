@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
-    "build": "parcel build index.html --public-url ./"
+    "build": "gulp && parcel build index.html --public-url ./"
   },
   "repository": {
     "type": "git",
@@ -19,6 +19,8 @@
   },
   "homepage": "https://github.com/Baek2back/Cafe-W#readme",
   "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-file-include": "^2.2.2",
     "node-sass": "^5.0.0",
     "parcel-bundler": "^1.12.4"
   }
