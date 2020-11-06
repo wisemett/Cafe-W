@@ -1,0 +1,25 @@
+{
+  "name": "Cafe-W",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Baek2back/Cafe-W.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Baek2back/Cafe-W/issues"
+  },
+  "homepage": "https://github.com/Baek2back/Cafe-W#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0",
+    "parcel-bundler": "^1.12.4"
+  }
+}
