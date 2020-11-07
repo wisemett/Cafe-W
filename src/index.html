@@ -2,7 +2,18 @@
   <block name="headerContainer">
     <include src="commons/header.html"></include>
   </block>
-  <block name="mainContainer"></block>
+  <main>
+    <div class="main-notice">
+      <article>
+        <a href="#"></a>
+        <time>2020.05.15</time>
+      </article>
+      <button>X</button>
+    </div>
+    <block name="mainContainer">
+      <include src="main/season-item.html"></include>
+    </block>
+  </main>
   <block name="footerContainer">
     <include src="commons/footer.html"></include>
   </block>
