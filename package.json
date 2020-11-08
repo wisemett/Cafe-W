@@ -6,7 +6,7 @@
   "scripts": {
     "start": "parcel src/index.html --open -d build",
     "build": "parcel build src/index.html --public-url ./",
-    "lighthouse": "npx lighthouse http://localhost:1234/ --output-path ./reports/index.html"
+    "lighthouse": "npx lighthouse --view http://localhost:1234/ --output-path ./reports/index.html"
   },
   "repository": {
     "type": "git",
