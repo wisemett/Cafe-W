@@ -1,0 +1,26 @@
+// 루트 요소의 기본 글자크기 설정
+html {
+  font-size: 10px;
+  overflow-y: visible;
+  background: red;
+}
+
+// 기본 박스 사이징 설정
+body,
+body::before,
+body::after,
+body *,
+body *::before,
+body *::after {
+  box-sizing: border-box;
+}
+
+$font-stack: ('Spoqa Han Sans', sans-serif);
+
+body {
+  font-family: $font-stack;
+  font-weight: 400;
+  font-size: 1.6rem;
+  // color
+  // background-color
+}

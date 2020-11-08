@@ -12,20 +12,16 @@
     <include src="components/commons/skip-nav.html"></include>
     <include src="layouts/header.html"></include>
   </block>
-  <main>
-    <block name="headerContainer">
-      <include src="components/commons/skip-nav.html"></include>
-      <include src="layouts/header.html"></include>
-    </block>
-    <block name="mainContainer">
+  <block name="mainContainer">
+    <main>
       <include src="components/commons/main-notice.html"></include>
       <include src="components/main/season-item.html"></include>
       <include src="components/main/class-recommendation.html"></include>
       <include src="components/main/class-introduction.html"></include>
       <include src="components/main/class-youtube.html"></include>
-      <include srec="components/main/cafe-reserve.html"></include>
-    </block>
-  </main>
+      <include src="components/main/cafe-reserve.html"></include>
+    </main>
+  </block>
   <block name="footerContainer">
     <include src="layouts/footer.html"></include>
   </block>
