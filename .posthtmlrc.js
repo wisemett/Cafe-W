@@ -1,10 +1,10 @@
 module.exports = {
   plugins: {
     'posthtml-include': {
-      root: __dirname + '/src/components'
+      root: __dirname + '/src'
     },
     'posthtml-extend': {
-      root: __dirname + '/src/layouts'
+      root: __dirname + '/src'
     }
   }
 };

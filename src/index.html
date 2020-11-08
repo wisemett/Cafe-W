@@ -1,22 +1,30 @@
-<extends src="base.html">
+<extends src="layouts/base.html">
+  <block name="commons">
+    <include src="head/commons.html"></include>
+  </block>
+  <block name="openGraph">
+    <include src="head/open-graph.html"></include>
+  </block>
+  <block name="twitterCard">
+    <include src="head/twitter-card.html"></include>
+  </block>
   <block name="headerContainer">
-    <include src="commons/header.html"></include>
+    <include src="components/commons/skip-nav.html"></include>
+    <include src="layouts/header.html"></include>
   </block>
   <main>
-    <div class="main-notice">
-      <article>
-        <a href="#"></a>
-        <time>2020.05.15</time>
-      </article>
-      <button>X</button>
-    </div>
+    <block name="headerContainer">
+      <include src="components/commons/skip-nav.html"></include>
+      <include src="layouts/header.html"></include>
+    </block>
     <block name="mainContainer">
-      <include src="main/season-item.html"></include>
-      <include src="main/class-recommendation.html"></include>
-      <include src="main/class-introduction.html"></include>
+      <include src="components/commons/main-notice.html"></include>
+      <include src="components/main/season-item.html"></include>
+      <include src="components/main/class-recommendation.html"></include>
+      <include src="components/main/class-introduction.html"></include>
     </block>
   </main>
   <block name="footerContainer">
-    <include src="commons/footer.html"></include>
+    <include src="layouts/footer.html"></include>
   </block>
 </extends>
