@@ -1,0 +1,29 @@
+.main-notice {
+    background: rgba(226, 119, 98, 0.9);
+    border: 1px solid rgba(255, 252, 249, 0.9);
+    backdrop-filter: blur(3px);
+    border-radius: 100px;
+    width: 601px;
+    height: 60px;
+    margin: 0 auto;
+    line-height: 1.4rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+.main-notice__speaker {
+    margin: auto 10px;
+}
+.main-notice > * {
+    margin: auto 0;
+    display: inline-block;
+}
+.main-notice a {
+    width: 330px;
+}
+.main-notice time {
+    width: 90px;
+    text-align: right;
+    font-size: 1.4rem;
+    color: #FFFCF9;
+}

@@ -1,0 +1,19 @@
+.youtube {
+    background-color: #282725;
+    padding: 25px 0;
+    display: flex;
+    flex-flow: row nowrap;
+}
+.youtube__iframe {
+    filter: drop-shadow(0px 16px 32px rgba(35, 23, 5, 0.26));
+    text-align: center;
+}
+.youtube__left-logo {
+    order: -5;
+}
+.youtube__left-logo,
+.youtube__right-logo {
+    margin: auto;
+    width: 70px;
+
+}
