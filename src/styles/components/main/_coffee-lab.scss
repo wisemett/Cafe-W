@@ -1,0 +1,111 @@
+.coffee-lab {
+  background: #fffcf9;
+  padding: 80px 120px;
+  width: 1440px;
+  height: 1192px;
+  position: relative;
+}
+.coffee-lab__heading {
+  font-size: 46px;
+  font-weight: 300;
+  line-height: 64px;
+  margin: 0;
+  text-align: center;
+}
+.coffee-lab__heading em {
+  font-weight: 700;
+  font-style: normal;
+}
+.coffee-lab p {
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: 300;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+.coffee-lab p em {
+  font-weight: 700;
+  font-style: normal;
+}
+.coffee-lab__list {
+  &::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 1px;
+    margin: 55px auto;
+    background: #7d6f5d;
+  }
+  list-style: none;
+  padding-left: 0;
+  font-size: 32px;
+  font-weight: 700;
+}
+.coffee-lab__list a {
+  display: block;
+  width: 692px;
+  height: 692px;
+}
+.coffee-lab__lab-barista {
+  transition: transform 1s, z-index 1s;
+  &:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  background: linear-gradient(
+      0deg,
+      rgba(65, 35, 17, 0.15),
+      rgba(65, 35, 17, 0.15)
+    ),
+    url(../assets/images/main-page-photo/6-row/coffee-lab-barista.png);
+  position: absolute;
+  top: 420px;
+  right: 120px;
+  text-align: center;
+  & span {
+    line-height: 45px;
+    color: #fffcf9;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 497px;
+    letter-spacing: 0.1em;
+  }
+  & span::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 10px;
+    background: #fffcf9;
+  }
+}
+.coffee-lab__lab-menu {
+  transition: transform 1s;
+  &:hover {
+    transform: scale(1.1);
+  }
+  background: linear-gradient(
+      0deg,
+      rgba(65, 35, 17, 0.15),
+      rgba(65, 35, 17, 0.15)
+    ),
+    url(../assets/images/main-page-photo/6-row/coffee-lab-labmenu.png);
+  position: relative;
+  text-align: center;
+  & span {
+    color: #fffcf9;
+    line-height: 45px;
+    transform: translateX(-50%);
+    position: absolute;
+    top: 497px;
+    margin-top: 20px;
+    letter-spacing: 0.1em;
+  }
+  & span::after {
+    content: '';
+    display: block;
+    width: 180px;
+    height: 10px;
+    background: #fffcf9;
+    margin-top: 20px;
+  }
+}
