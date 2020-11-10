@@ -1,0 +1,56 @@
+.cafe-reserve {
+  height: 458px;
+  background: radial-gradient(
+      109.05% 429.25% at 50% 50%,
+      rgba(23, 15, 4, 0) 0%,
+      #3c1d0a 100%
+    ),
+    url('../assets/images/main-page-photo/4-row/커피마시는 여성.jpg');
+  background-size: 100% 100%;
+  padding: 90px 0 0 120px;
+}
+.cafe-reserve__wrapper {
+  padding-left: 104px;
+  position: relative;
+  display: flex;
+  flex-flow: column wrap;
+  & span[lang='en'] {
+    letter-spacing: 0.05em;
+    font-size: 26px;
+    line-height: 26px;
+    color: #a37356;
+  }
+  & span[lang='kr'] {
+    font-size: 16px;
+    width: 192px;
+    height: 42px;
+    word-break: keep-all;
+    color: #a37356;
+    margin: 20px 0;
+    line-height: 20px;
+  }
+  & svg {
+    position: absolute;
+    top: 34px;
+    left: 0px;
+  }
+  & a {
+    width: 128px;
+    height: 36px;
+    text-align: center;
+    border: 2px solid #a37356;
+    border-radius: 3px;
+    background-color: transparent;
+    padding: 8px 23px;
+    text-decoration: none;
+    color: #a37356;
+    line-height: 16px;
+  }
+}
+.cafe-reserve__heading {
+  font-size: 18px;
+  letter-spacing: 0.15em;
+  color: #a37356;
+  font-weight: 700;
+  margin: 0;
+}
