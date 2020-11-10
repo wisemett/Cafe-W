@@ -1,0 +1,137 @@
+//기본 설정
+.a11y-hidden {
+    border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+* {
+    box-sizing: border-box;
+}
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+button {
+    border: 0;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    color: #FFFCF9;
+}
+a {
+    color: #FFFCF9;
+    text-decoration: none;
+}
+//헤더
+header {
+    display: flex;
+    flex-flow: row wrap;
+    position: relative;
+    background-color: #282725;
+    color: #FFFCF9;
+    line-height: 1;
+
+}
+//헤더 로고
+.header__logo {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #fffcf915;
+    margin: 0;
+    height: 82px;
+    position: relative;
+    padding: 0 120px;
+}
+.header__logo a {
+    position: absolute;
+    height: 40px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+//헤더 좌상단 회원 영역
+.header__sign-group {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 109px;
+    height: 82px;
+}
+.header__sign-group a {
+    padding: 10px;
+}
+
+.header__sign-group li:first-child {
+    margin-right: 30px;
+}
+//헤더 우상단 검색 영역
+.header__search-form {
+    position: absolute;
+    right: 120px;
+}
+.header__search-form fieldset {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    height: 82px;
+    display: flex;
+    align-items: center;
+}
+.header__search-form legend {
+    display: none;
+}
+.header__search-form-container {
+    display: flex;
+    width: 242px;
+}
+.header__search-form-container input {
+    border: 0;
+    margin: 0;
+    padding: 0;
+    height: 40px;
+    flex-grow: 1;
+    background: transparent;
+    color: #FFFCF9;
+    font-size: 1.6rem;
+}
+.header__btn-search {
+    padding: 8px;
+    height: 40px;
+    cursor: pointer;
+}
+//헤더 네비게이션
+.nav {
+    width: 100%;
+    padding: 0 120px;
+    position: relative;
+}
+.nav__main-menu-list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+    height: 195px;
+}
+.nav__main-menu-list > li {
+    width: 180px;
+    height: 101px;
+}
+.nav__main-menu-list button {
+    font-weight: 700;
+    font-size: 2rem;
+    height: 20px;
+    margin-bottom: 18px;
+}
+.nav__sub-menu-list {
+    font-size: 1.5rem;
+    height: 66px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
