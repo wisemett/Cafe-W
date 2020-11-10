@@ -1,24 +1,31 @@
 <header>
-  <h1>
+  <h1 class="header__logo">
     <a href="#"><img src="" alt="Cafe-W Logo" /></a>
   </h1>
-  <ul class="sign-group">
+  <ul class="header__sign-group">
     <li>
-      <a href="#"><img src="" alt="sign-in" /></a>
+      <a href="#">Sign in</a>
     </li>
     <li>
-      <a href="#"><img src="" alt="sign-up" /></a>
-    </li>
-    <li>
-      <a href=""><img src="" alt="search-button" /></a>
+      <a href="#">Sign up</a>
     </li>
   </ul>
-  <nav>
+  <form method="POST" action="" class="header__search-form">
+    <fieldset>
+      <legend>검색 폼</legend>
+      <div class="header__search-form-container">
+        <label for="search"><span class="header__icon-search" aria-label="메뉴 검색"></span></label>
+        <input type="search" id="search" name="search" required>
+      <button class="header__btn-search" type="submit">검색</button>
+    </div>
+    </fieldset>
+  </form>
+  <nav class="nav">
     <h2 class="a11y-hidden">메인메뉴</h2>
-    <ul>
+    <ul class="nav__main-menu-list">
       <li>
-        <button>Drink</button>
-        <ul>
+        <button class="nav__btn-menu">Drink</button>
+        <ul class="nav__sub-menu-list">
           <li>
             <a href="">콜드브루</a>
           </li>
@@ -31,8 +38,8 @@
         </ul>
       </li>
       <li>
-        <button>Foods</button>
-        <ul>
+        <button class="nav__btn-menu">Foods</button>
+        <ul class="nav__sub-menu-list">
           <li>
             <a href="">베이커리</a>
           </li>
@@ -45,8 +52,8 @@
         </ul>
       </li>
       <li>
-        <button>Products</button>
-        <ul>
+        <button class="nav__btn-menu">Products</button>
+        <ul class="nav__sub-menu-list">
           <li>
             <a href="">머그</a>
           </li>
@@ -59,8 +66,8 @@
         </ul>
       </li>
       <li>
-        <button>Lectures</button>
-        <ul>
+        <button class="nav__btn-menu">Lectures</button>
+        <ul class="nav__sub-menu-list">
           <li>
             <a href="">UI 구조 & 디자인</a>
           </li>
@@ -73,8 +80,8 @@
         </ul>
       </li>
       <li>
-        <button>Customer Service</button>
-        <ul>
+        <button class="nav__btn-menu">Customer Service</button>
+        <ul class="nav__sub-menu-list">
           <li>
             <a href="">공지사항</a>
           </li>
