@@ -1,5 +1,4 @@
 .cafe-reserve {
-  // width: 1440px;
   height: 458px;
   background: radial-gradient(
       109.05% 429.25% at 50% 50%,
@@ -8,7 +7,9 @@
     ),
     url('../assets/images/main-page-photo/4-row/reserve-background.jpg');
   background-size: 100% 100%;
-  padding: 90px 0 0 120px;
+  padding: 90px 0 0 0;
+  display: flex;
+  justify-content: center;
 }
 .cafe-reserve__wrapper {
   width: 1200px;
