@@ -4,15 +4,16 @@ footer {
     color: #FFFCF960;
     text-align: center;
     position: relative;
-    width: 1440px;
 }
+
 //위로 가기 버튼
 .btn-go-up {
     position: absolute;
     top: -80px;
     right: 30px;
-    fill:red;
+    fill: #E27762;
 }
+
 //푸터 네비게이션
 .footer__menu-list {
     display: flex;
@@ -21,21 +22,25 @@ footer {
     padding: 30px 0;
     margin: 0 auto;
 }
-.footer__menu-list a{
+
+.footer__menu-list a {
     font-weight: 700;
     line-height: 1.4;
     color: #FFFCF960;
     transition: all 0.2s;
 }
+
 .footer__menu-list a:hover {
     color: #FFFCF9;
 }
+
 //푸터 로고
 .footer__logo {
     text-align: center;
     border-top: 1px solid rgba(255, 252, 249, 0.2);
     padding: 40px 0;
 }
+
 //푸터 어드레스
 .footer__address {
     display: flex;
@@ -47,13 +52,16 @@ footer {
     width: 600px;
     margin: 0 auto;
 }
+
 .footer__address span::after {
     content: '|';
     margin: 0 5px;
 }
+
 .footer__address span:last-child::after {
     content: '';
 }
+
 //푸터 카피라이트
 .footer__copyright {
     display: inline-block;
