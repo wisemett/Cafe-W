@@ -1,0 +1,70 @@
+<extends src="layouts/base.html">
+    <block name="commons">
+      <include src="head/commons.html"></include>
+    </block>
+    <block name="openGraph">
+      <include src="head/open-graph.html"></include>
+    </block>
+    <block name="twitterCard">
+      <include src="head/twitter-card.html"></include>
+    </block>
+    <block name="headerContainer">
+      <include src="components/commons/skip-nav.html"></include>
+      <include src="layouts/header.html"></include>
+    </block>
+    <block name="mainContainer">
+      <main>
+        <section class="sign-in">
+            <div class="sign-in__container">
+              <div class="sign-in__header">
+                <h2 class="sign-in__heading">SIGN IN</h2>
+                <p class="sign-in__intro">환영합니다. 이곳은 CAFE W 입니다.</p>
+              </div>
+              <form action="" class="sign-in__form">
+                <fieldset>
+                  <legend class="a11y-hidden">로그인</legend>
+                    <div class="sign-in__user-id">
+                      <label for="userId">아이디</label>
+                      <input type="email" id="userId" name="userId" 
+                      placeholder="사용자 계정을 입력합니다." required/>  
+                    </div>
+                    <div class="sign-in__user-pw">
+                      <label for="userPw">비밀번호</label>
+                      <input type="password" id="userPw" name="userPw" 
+                      placeholder="사용자 계정 비밀번호를 입력합니다." required/>
+                    </div>
+                    <button class="sign-in__button">로그인</button>
+                    <div class="sign-in__toggle-container">
+                      <div class="sign-in__toggle">
+                        <label class="toggle" for="rememberId">아이디 저장</label>
+                        <input type="checkbox" id="rememberId">
+                        <span class="slider round"></span>
+                      </div>
+                      <div class="sign-in__toggle"><label class="toggle" for="rememberLogin">로그인 상태 유지</label>
+                        <input type="checkbox" id="rememberLogin">
+                        <span class="slider round"></span>
+                      </div>     
+                    </div>     
+                    <p class="sign-in__security">타 사이트와 비밀번호를 동일하게 사용할 경우 도용의 위험이 있으므로, 사용자 정보 보호를 위해 정기적인 비밀번호 변경을 요청드립니다.</p>
+                    <p class="sign-in__browser">Cafe W 공식 홈페이지틑 Internet Explore 9.0이상, Chrome, Firefox, Safari, Edge 브라우저에 최적화 되었습니다.</p>
+                </fieldset>
+              </form>
+              <ul class="sign-in__member">
+                <li><a href="">회원가입</a></li>
+                <li><a href="">아이디 찾기</a></li>
+                <li><a href="">비밀번호 찾기</a></li>
+              </ul>
+            </div>
+            <svg class="sign-in__left-star" width="70px" height="95px">
+              <use xlink:href="assets/svg/main-page-sprite-sheet.svg#star-symbol-black"/>
+            </svg>
+            <svg class="sign-in__right-star" width="70px" height="95px">
+              <use xlink:href="assets/svg/main-page-sprite-sheet.svg#star-symbol-black"/>
+            </svg>
+          </section>
+      </main>
+    </block>
+    <block name="footerContainer">
+      <include src="layouts/footer.html"></include>
+    </block>
+  </extends>
