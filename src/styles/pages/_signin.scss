@@ -89,24 +89,56 @@
     margin: 30px 0;
     background: #7D6F5D;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 //아이디 저장 토글
-.sign-in__toggle-container {
+.sign-in__toggle {
     display: flex;
     margin-bottom: 24px;
 }
-
-.sign-in__toggle {
-    display: flex;
-    width: 50%;
+.sign-in__toggle input {
+    display: none;
 }
-
 .sign-in__toggle label {
     font-size: 1.4rem;
     line-height: 1;
+    padding-left: 45px;
+    position: relative;
+    z-index: 5;
 }
-
+.sign-in__toggle label:last-of-type {
+    left: 100px;
+}
+.sign-in__toggle .toggle {
+    width: 34px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(207, 204, 199, 0.5);
+}
+.sign-in__toggle .toggle::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #cfccc7;
+    left: -3px;
+}
+//동작을 안하는 토글 애니메이션 문제가 뭘까요
+.sign-in__toggle > input:checked + label .toggle {
+    background-color: rgba(126, 112, 93, 0.6);
+}
+.sign-in__toggle > input:checked + label .toggle::before {
+    background-color: #7D6F5D;
+    transform: translateX(34px);
+}
 //두줄짜리
 .sign-in__info-list li {
     display: flex;
@@ -143,7 +175,7 @@
     align-items: center;
     font-size: 1.6rem;
     line-height: 1;
-    color: #7D6F5D07;
+    color: #7D6F5D;
     margin: 0 auto;
 }
 
@@ -153,10 +185,12 @@
     justify-content: center;
 }
 
+
 .sign-in__member li::after {
     content: '|';
     color: #7D6F5D;
     margin: auto 0;
+    opacity: 0.7;
 }
 
 .sign-in__member li:last-child::after {
@@ -165,13 +199,19 @@
 
 .sign-in__member a {
     display: block;
-    padding: 15px 0px;
+    padding: 5px 0;
     color: #7D6F5D;
     font-size: 1.6rem;
     font-weight: 700;
-    margin: 0 16px;
+    margin: 10px 16px;
     width: 93px;
     text-align: center;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+// 멤버 메뉴 호버 애니메이션
+.sign-in__member a:hover {
+    opacity: 1;
 }
 
 //배경 별 로고
