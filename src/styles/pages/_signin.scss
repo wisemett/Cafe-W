@@ -130,14 +130,15 @@
     position: absolute;
     background-color: #cfccc7;
     left: -3px;
+    transition: all 0.2s;
 }
-//동작을 안하는 토글 애니메이션 문제가 뭘까요
+//토글 애니메이션
 .sign-in__toggle > input:checked + label .toggle {
     background-color: rgba(126, 112, 93, 0.6);
 }
 .sign-in__toggle > input:checked + label .toggle::before {
     background-color: #7D6F5D;
-    transform: translateX(34px);
+    transform: translateX(20px);
 }
 //두줄짜리
 .sign-in__info-list li {
