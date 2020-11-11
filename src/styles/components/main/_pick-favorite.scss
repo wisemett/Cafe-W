@@ -4,11 +4,14 @@
       rgba(32, 23, 1, 0.5) 36.2%,
       rgba(95, 57, 35, 0.2) 74.71%
     ),
-    url('../assets/images/main-page-photo/5-row/coffee-background.png');
+    url('../assets/images/main-page-photo/5-row/coffee-background.jpg');
   background-size: 100% 100%;
-  width: 1440px;
   height: 852px;
   display: flex;
+  justify-content: center;
+}
+.pick-favorite__wrapper {
+  width: 1200px;
   position: relative;
 }
 .pick-favorite__text {
@@ -18,7 +21,7 @@
   display: flex;
   flex-flow: column nowrap;
   align-items: flex-end;
-  margin: 110px 0 0 110px;
+  margin: 110px 0;
 }
 .pick-favorite__text h2 {
   margin: 10px 0 0 0;
@@ -90,14 +93,14 @@
   width: 284px;
   height: 362px;
   background: no-repeat
-    url('../assets/images/main-page-photo/5-row/pick-your-favorite-1.png');
+    url('../assets/images/main-page-photo/5-row/pick-your-favorite-1.jpg');
   border: 10px solid #ffffff;
   filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
   transform: rotate(-9.21deg);
   background-size: 100% 100%;
   position: absolute;
-  top: 192px;
-  right: 510px;
+  bottom: 257px;
+  right: 390px;
 }
 
 .pick-favorite__visual li:nth-child(2) {
@@ -110,14 +113,14 @@
   width: 284px;
   height: 362px;
   background: no-repeat
-    url('../assets/images/main-page-photo/5-row/pick-your-favorite-2.png');
+    url('../assets/images/main-page-photo/5-row/pick-your-favorite-2.jpg');
   border: 10px solid #ffffff;
   filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
   transform: rotate(8.71deg);
   background-size: 100% 100%;
   position: absolute;
-  top: 150px;
-  right: 300px;
+  bottom: 300px;
+  right: 180px;
 }
 .pick-favorite__visual li:nth-child(3) {
   &:hover {
@@ -128,12 +131,12 @@
   width: 284px;
   height: 362px;
   background: no-repeat
-    url('../assets/images/main-page-photo/5-row/pick-your-favorite-3.png');
+    url('../assets/images/main-page-photo/5-row/pick-your-favorite-3.jpg');
   border: 10px solid #ffffff;
   filter: drop-shadow(2px 6px 10px rgba(0, 0, 0, 0.45));
   transform: rotate(29.6deg);
   background-size: 100% 100%;
   position: absolute;
-  top: 292px;
-  right: 76px;
+  bottom: 104px;
+  right: -45px;
 }

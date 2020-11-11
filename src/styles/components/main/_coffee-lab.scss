@@ -1,8 +1,12 @@
 .coffee-lab {
   background: #fffcf9;
-  padding: 80px 120px;
-  width: 1440px;
   height: 1192px;
+  display: flex;
+  justify-content: center;
+}
+.coffee-lab__wrapper {
+  padding: 80px 0;
+  width: 1200px;
   position: relative;
 }
 .coffee-lab__heading {
@@ -60,7 +64,7 @@
     url(../assets/images/main-page-photo/6-row/coffee-lab-barista.png);
   position: absolute;
   top: 420px;
-  right: 120px;
+  right: 0;
   text-align: center;
   & span {
     line-height: 45px;
