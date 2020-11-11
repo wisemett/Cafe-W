@@ -1,0 +1,67 @@
+.sign-up {
+    border-radius: 3px;
+    border: 1px solid #CBC5BE;
+    text-align: center;
+    margin: 100px auto;
+    // background: #FFFCF9, url(../../assets/images/sign-in-page-photo/barista/Barista.jpg) no-repeat;
+    background-size: auto 392px;
+    background-position: right -10px bottom -130px;
+    width: 742px;
+}
+.sign-up__header {
+    width: 660px;
+    text-transform: uppercase;
+    margin: 25px auto;
+}
+
+.sign-up__heading {
+    width: 660px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.4;
+    letter-spacing: 0.1;
+}
+
+.sign-up__intro {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+.sign-up__form {
+    padding: 40px 152px 50px;
+    border-top: 1px solid #CBC5BE70;
+    color: #7D6F5D;
+    line-height: 1.2;
+    font-size: 1.3rem;
+
+}
+.sign-up__form::before {
+    content: '';
+    display: block;
+    height: 105px;
+    // background: url(../assets/images/sign-up-page-photo/barista/Barista\ Girl.jpg) center no-repeat;
+}
+.sign-up__form label,
+.sign-up__birth span,
+.sign-up__auth span {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+.sign-up__tip {
+    line-height: 1.4;
+}
+
+.auto-bold {
+    font-weight: 700;
+    line-height: 1.1;
+    font-size: 1.4rem;
+}
+.sign-up__auto {
+    height: 230px;
+    border: 1px solid rgba(125, 111, 93, 0.5);
+    border-radius: 3px;
+}
+.sign-up__terms textarea {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 17px;
+}
