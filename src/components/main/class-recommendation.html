@@ -1,52 +1,84 @@
 <section class="class-rec">
-  <h2 class="class-rec__heading a11y-hidden">class recommendation</h2>
-  <div class="class-rec__button">
-    <a href="#" role="button"><strong>멀티캠퍼스</strong>추천 강좌</a>
-    <a href="#" role="button"><strong>이듬 블렌디드 러닝</strong>추천 강좌</a>
-  </div>
-  <div class="class-rec__white-background">
-    <div class="class-rec__background">
-      <div class="class-rec__text-box">
-        <span class="class-rec__text-box-en">Git & HTML & CSS</span>
-        <span class="class-rec__text-box-kr">입문자를 위한 GIT과 HTML & CSS</span>
-        <button class="class-rec__button-details"><span>강의정보</span></button>
-      </div>
-    </div>
-    <div class="class-rec__html-detail">
-      <h3 class="class-rec__html-name">GIT & HTML/CSS</h3>
-      <p class="class-rec__html-name-sub">입문자를 위한 Gitrhk HTML & CSS</p>
-      <div class="class-rec__rating">
-        <span class="class-rec__star-icon">★★★★☆</span>
-        <span>4점</span>
-      </div>
-      <dl class="class-rec__table">
-        <!-- table도 가능할 듯 -->
-        <dt>학습시간</dt>
-        <dd>09:00~17:00 (28시간)</dd>
-        <dt>난이도</dt>
-        <dd>초급</dd>
-        <dt>교육비 지원</dt>
-        <dd>고용보험 비환급</dd>
-        <dt>평가항목</dt>
-        <dd>출석률 100%</dd>
-        <dt>수료기준</dt>
-        <dd>총점 80점 이상시 수료</dd>
-        <dt>정원</dt>
-        <dd>24명</dd>
-        <dt>교재정보</dt>
-        <dd>입문자를 위한 GIT과 HTML&CSS</dd>
-        <dd>HTML&CSS 웹사이트 개발과 디자인 기초 (35,000원)</dd>
-      </dl>
-      <button class="class-rec__btn-close">x</button>
+  <div class="class-rec__wrapper">
+    <h2 class="class-rec__heading a11y-hidden">class recommendation</h2>
+    <div class="class-rec__button">
+      <a href="#" role="button" class="class-rec__button-multi"><strong>멀티 캠퍼스</strong>추천 강좌
+        <svg>
+          <use xlink:href="assets/svg/main-page-sprite-sheet.svg#multi-campus-up"/></svg></a>
+        <a href="#" role="button" class="class-rec__button-ethum"><strong>이듬 블렌디드 러닝</strong>추천 강좌
+        <svg>
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#ethum-campus-up"/></svg></a>
     </div>
     <div class="class-rec__background">
-      <div class="class-rec__text-box">
-        <span class="class-rec__text-box-en">Git & HTML & CSS</span>
-        <span class="class-rec__text-box-kr">입문자를 위한 GIT과 HTML & CSS</span>
-        <button class="class-rec__button-details"><span>강의정보</span></button>
+      <div class="class-rec__html-css">
+        <img src="assets/images/main-page-photo/1-row/git&html:css.jpg" alt="GIT & HTML/CSS 이미지">
+        <div class="class-rec__text-box">
+          <span class="class-rec__text-box-en">Git & HTML & CSS</span>
+          <span class="class-rec__text-box-kr">입문자를 위한 GIT과 HTML & CSS</span>
+          <button class="class-rec__button-details"><span>강의정보</span></button>
+        </div>
+        <div class="class-rec__responsive">
+          <img src="assets/images/main-page-photo/1-row/responsive-web-deisign-stratigies.jpg" alt="RESPONSIVE WEB 이미지">
+          <div class="class-rec__text-box">
+            <span class="class-rec__text-box-en">RESPONSIVE WEB DESIGN STRATEGIES</span>
+            <span class="class-rec__text-box-kr">반응형 웹디자인 전략</span>
+            <button class="class-rec__button-details"><span>강의정보</span></button>
+          </div>
+        </div>
       </div>
+      <div class="class-rec__black-background">
+        <div class="class-rec__rating">
+          <h3 class="class-rec__rating-name">GIT & HTML/CSS</h3>
+          <p class="class-rec__rating-name-sub">입문자를 위한 Git과 HTML & CSS</p>
+          <div class="class-rec__rating-numb">
+            <span class="class-rec__rating-star">★★★★☆</span>
+            <span>4점</span>
+          </div>
+        </div>
+        <table class="class_rec__rating-table">
+          <tr class="class_rec__rating-index-first">
+            <th>학습시간</th>
+            <td>09:00~17:00 (28시간)</td>
+            <th>난이도</th>
+            <td>초급</td>
+          </tr>
+          <tr class="class_rec__rating-index-second">
+            <th>교육비 지원</th>
+            <td>고용보험 비환급</td>
+            <th>평가항목</th>
+            <td>출석률 100%</td>
+          </tr>
+          <tr class="class_rec__rating-index-third">
+            <th>수료기준</th>
+            <td>총점 80점 이상시 수료</td>
+            <th>정원</th>
+            <td>24명</td>
+          </tr>
+          <tr class="class_rec__rating-index-fourth">
+            <th>교재정보</th>
+            <td>입문자를 위한 GIT과 HTML&CSS<br>HTML&CSS 웹사이트 개발과 디자인 기초 (35,000원)</td>
+          </tr>
+          <button class="class-rec__btn-close">x</button>
+        </table>
+      </div>
+      <svg class="git-html-left">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#git-html-left" />
+      </svg>
+      <svg class="responsive-web-right">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#responsive-web-right" />
+      </svg>
+      <svg class="pause">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#pause" />
+      </svg>
+      <svg class="active-bar">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#active-bar" />
+      </svg>
+      <svg class="unactive-circle-1">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#unactive-circle" />
+      </svg>
+      <svg class="unactive-circle-2">
+        <use xlink:href="assets/svg/main-page-sprite-sheet.svg#unactive-circle" />
+      </svg>
     </div>
   </div>
-  <svg class="class-rec__left-arrow"></svg>
-  <svg class="class-rec__right-arrow"></svg>
 </section>
