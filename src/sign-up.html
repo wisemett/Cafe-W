@@ -1,106 +1,106 @@
 <extends src="layouts/base.html">
-    <block name="commons">
-      <include src="head/commons.html"></include>
-    </block>
-    <block name="openGraph">
-      <include src="head/open-graph.html"></include>
-    </block>
-    <block name="twitterCard">
-      <include src="head/twitter-card.html"></include>
-    </block>
-    <block name="headerContainer">
-      <include src="components/commons/skip-nav.html"></include>
-      <include src="layouts/header.html"></include>
-    </block>
-    <block name="mainContainer">
-      <main>
-        <section class="sign-up">
-            <div class="sign-up__header">
-              <h2 class="sign-up__heading">SIGN UP</h2>
-              <p class="sign-up__intro">CAFE W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
+  <block name="commons">
+    <include src="head/commons.html"></include>
+  </block>
+  <block name="openGraph">
+    <include src="head/open-graph.html"></include>
+  </block>
+  <block name="twitterCard">
+    <include src="head/twitter-card.html"></include>
+  </block>
+  <block name="headerContainer">
+    <include src="components/commons/skip-nav.html"></include>
+    <include src="layouts/header.html"></include>
+  </block>
+  <block name="mainContainer">
+    <main>
+      <section class="sign-up">
+        <div class="sign-up__header">
+          <h2 class="sign-up__heading">SIGN UP</h2>
+          <p class="sign-up__intro">CAFE W에 가입하세요. 좋은 서비스로 보답하겠습니다.</p>
+        </div>
+        <form action="" id="signUp" class="sign-up__form">
+          <fieldset>
+            <legend>SIGN UP</legend>
+            <div class="sign-up__user-id">
+              <label for="user-id">아이디</label>
+              <input type="text" id="user-id">
             </div>
-            <form action="" id="signUp" class="sign-up__form">
-              <fieldset>
-                <legend>SIGN UP</legend>
-                <div class="sign-up__user-id">
-                  <label for="user-id">아이디</label>
-                  <input type="text" id="user-id">
-                </div>
-          
-                <div class="sign-up__user-pw">
-                  <label for="user-pw">패스워드</label>
-                  <input type="text" id="user-pw">
-                </div>
-                
-                <div class="sign-up__user-pw-check">
-                  <label for="user-pw-check">패스워드 확인</label>
-                  <input type="text" id="user-pw-check">
-                </div>
-          
-                <div class="sign-up__user-name">
-                  <label for="user-name">이름</label>
-                  <input type="text" id="user-name">
-                </div>
-                <div class="sign-up__user-gender">
-                  <label for="user-gender">성별</label>
-                  <input type="radio" id="user-gender">
-                </div>
-                <div class="sign-up__birth">
-                  <span aria-label="birth">생년월일</span>
-                  <label for="birthYear" class="a11y-hidden">년도</label>
-                  <select name="user-birth-year" id="birthYear" class="sign-up__birth-year">
-                  <option value="2000">2000</option>
-                  <option value="2001">2001</option>
-                  <option value="2002">2002</option>
-                  </select>
-                  <label for="birthMonth" class="a11y-hidden">월</label>
-                  <select name="user-birth-month" id="birthMonth" class="sign-up__birth-month">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  </select>
-                  <label for="birthDay" class="a11y-hidden">일</label>
-                  <select name="user-birth-day" id="birthDay" class="sign-up__birth-day">
-                  <option value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  </select>
-                  <label for="birthCalendar" class="a11y-hidden">양/음력</label>
-                  <select name="user-birth-calendar" id="birthCalendar" class="sign-up__calendar">
-                  <option value="solar-calendar">양력</option>
-                  <option value="luna-calendar">음력</option>
-                  </select>
-                </div>
-                <p class="sign-up__tip">회원 가입 완료 후, Cafe W 카드를 등록하시면 무료음료 쿠폰이 발행됩니다.</p>
-                <div class="sign-up__phone-number">
-                  <label for="user-phone-number">전화번호</label>
-                  <input type="number" id="user-phone-number">
-                </div>
-                <section class="sign-up__auth">
-                  <span>인증방식</span>
-                  <ul class="sign-up__verify-auth">
-                    <li class="sign-up__verify-auth-phone">
-                      <img src="" alt="">
-                      <p class="auth-bold">휴대폰 인증</p>
-                      <p>본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
-                      <a>인증</a>
-                    </li>
-                    <li class="sign-up__verify-auth-ipin">
-                      <img src="" alt="">
-                      <p class="auth-bold">아이핀(i-PIN)인증</p>
-                      <p>가입한 아이핀 ID를 사용해 인증 절차를 수행합니다.</p>
-                      <a>인증</a>
-                    </li>
-                  </ul>
-                </section>
-                <div class="sign-up__nickname"><label for="userNickname">닉네임</label>
-                <input type="text" id="userNickname"></div>
-                <div class="sign-up__terms">
-                  <div class="sign-up__toggle"><label class="toggle" for="rememberLogin">선택적 개인정보 수집동의 및 이용약관</label>
-                    <input type="checkbox" id="rememberLogin">
-                    <span class="slider round"></span>
-                  </div>    
-                  <textarea name="" id="" cols="30" rows="10">본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
+
+            <div class="sign-up__user-pw">
+              <label for="user-pw">패스워드</label>
+              <input type="text" id="user-pw">
+            </div>
+
+            <div class="sign-up__user-pw-check">
+              <label for="user-pw-check">패스워드 확인</label>
+              <input type="text" id="user-pw-check">
+            </div>
+
+            <div class="sign-up__user-name">
+              <label for="user-name">이름</label>
+              <input type="text" id="user-name">
+            </div>
+            <div class="sign-up__user-gender">
+              <label for="user-gender">성별</label>
+              <input type="radio" id="user-gender">
+            </div>
+            <div class="sign-up__birth">
+              <span aria-label="birth">생년월일</span>
+              <label for="birthYear" class="a11y-hidden">년도</label>
+              <select name="user-birth-year" id="birthYear" class="sign-up__birth-year">
+                <option value="2000">2000</option>
+                <option value="2001">2001</option>
+                <option value="2002">2002</option>
+              </select>
+              <label for="birthMonth" class="a11y-hidden">월</label>
+              <select name="user-birth-month" id="birthMonth" class="sign-up__birth-month">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <label for="birthDay" class="a11y-hidden">일</label>
+              <select name="user-birth-day" id="birthDay" class="sign-up__birth-day">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+              </select>
+              <label for="birthCalendar" class="a11y-hidden">양/음력</label>
+              <select name="user-birth-calendar" id="birthCalendar" class="sign-up__calendar">
+                <option value="solar-calendar">양력</option>
+                <option value="luna-calendar">음력</option>
+              </select>
+            </div>
+            <p class="sign-up__tip">회원 가입 완료 후, Cafe W 카드를 등록하시면 무료음료 쿠폰이 발행됩니다.</p>
+            <div class="sign-up__phone-number">
+              <label for="user-phone-number">전화번호</label>
+              <input type="number" id="user-phone-number">
+            </div>
+            <section class="sign-up__auth">
+              <span>인증방식</span>
+              <ul class="sign-up__verify-auth">
+                <li class="sign-up__verify-auth-phone">
+                  <img src="" alt="">
+                  <p class="auth-bold">휴대폰 인증</p>
+                  <p>본인 명의 휴대폰으로 인증 절차를 수행합니다.</p>
+                  <a>인증</a>
+                </li>
+                <li class="sign-up__verify-auth-ipin">
+                  <img src="" alt="">
+                  <p class="auth-bold">아이핀(i-PIN)인증</p>
+                  <p>가입한 아이핀 ID를 사용해 인증 절차를 수행합니다.</p>
+                  <a>인증</a>
+                </li>
+              </ul>
+            </section>
+            <div class="sign-up__nickname"><label for="userNickname">닉네임</label>
+              <input type="text" id="userNickname"></div>
+            <div class="sign-up__terms">
+              <div class="sign-up__toggle"><label class="toggle" for="rememberLogin">선택적 개인정보 수집동의 및 이용약관</label>
+                <input type="checkbox" id="rememberLogin">
+                <span class="slider round"></span>
+              </div>
+              <textarea name="" id="" cols="30" rows="10">본인은 Cafe W(이하 “회사”라 합니다)가 제공하는 콜 마이 네임 서비스 (이하 “서비스”라 합니다)를 이용하기 위해, 다음과 같이 “회사”가 본인의 개인정보를 수집·이용하는 것에 동의합니다.
                     ※ 귀하께서는 개인정보 수집·이용에 대한 동의를 거부하실 수 있으나, 동의를 거부하실 경우 서비스 이용을 하실 수 없습니다.
                     1. 개인정보 항목·목적·보유기간
                     2. 관계법령에 의한 개인정보 보존기간
@@ -113,15 +113,15 @@
                     서비스 이용기록, 접속 로그, 쿠키, 접속 IP 정보, 결제기록
                     * 쿠키의 경우 구체적인 운영 내역과 설정 거부 방법 등은 본 홈페이지 개인정보처리방침 “개인정보 자동수집 장치의 설치, 운영 및 그 거부에 관한 사항”에서 확인하실 수 있습니다.
                   </textarea>
-                </div>
-                <p>선택항목을 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.</p>
-                <button class="sign-up__button">회원가입</button>
-              </fieldset>
-            </form>
-          </section>
-      </main>
-    </block>
-    <block name="footerContainer">
-      <include src="layouts/footer.html"></include>
-    </block>
-  </extends>
+            </div>
+            <p>선택항목을 입력하지 않거나 동의하지 않아도 회원 가입이 가능합니다.</p>
+            <button class="sign-up__button">회원가입</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </block>
+  <block name="footerContainer">
+    <include src="layouts/footer.html"></include>
+  </block>
+</extends>
