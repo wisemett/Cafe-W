@@ -6,24 +6,34 @@
     width: 601px;
     height: 60px;
     margin: 0 auto;
-    line-height: 1.4rem;
     display: flex;
-    justify-content: space-between;
-    padding: 0 20px;
+    justify-content: flex-end;
+    align-items: center;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
 }
-.main-notice__speaker {
-    margin: auto 10px;
-}
-.main-notice > * {
-    margin: auto 0;
-    display: inline-block;
+.main-notice .main-notice__speaker {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 30px;
 }
 .main-notice a {
     width: 330px;
+    margin-right: 16px;
 }
 .main-notice time {
     width: 90px;
     text-align: right;
     font-size: 1.4rem;
     color: #FFFCF9;
+    margin-right: 30px;
+}
+.main-notice__btn-close {
+    width: 40px;
+    height: 40px;
+    margin-right: 20px;
 }
