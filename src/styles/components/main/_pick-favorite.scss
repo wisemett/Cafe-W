@@ -34,9 +34,9 @@
   flex-flow: column nowrap;
 }
 .pick-favorite__text h2 strong:nth-child(1) {
-  @include basekick(5, 33, 0.11, 33, 5, 0.75);
+  @include basekick(5, 31, 0.11, 31, 5, 0.75);
   color: #fffcf9;
-  letter-spacing: 20px;
+  letter-spacing: 25px;
 }
 .pick-favorite__text h2 strong:nth-child(2) {
   letter-spacing: 20px;
