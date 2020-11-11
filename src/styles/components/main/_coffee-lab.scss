@@ -73,9 +73,10 @@
   & span::after {
     content: '';
     display: block;
-    width: 180px;
+    width: 220px;
     height: 10px;
     background: #fffcf9;
+    margin-top: 20px;
   }
 }
 .coffee-lab__lab-menu {
@@ -97,7 +98,6 @@
     transform: translateX(-50%);
     position: absolute;
     top: 497px;
-    margin-top: 20px;
     letter-spacing: 0.1em;
   }
   & span::after {

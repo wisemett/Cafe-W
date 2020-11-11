@@ -21,31 +21,27 @@
   margin: 110px 0 0 110px;
 }
 .pick-favorite__text h2 {
-  margin: 0;
+  margin: 10px 0 0 0;
   font-weight: normal;
   color: #fffcf9;
   text-transform: uppercase;
   width: 404px;
   height: 306px;
-  background: pink;
   display: flex;
   flex-flow: column nowrap;
 }
 .pick-favorite__text h2 strong:nth-child(1) {
-  font-size: 155px;
-  background: blue;
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
+  @include basekick(5, 33, 0.11, 33, 5, 0.75);
+  color: #fffcf9;
+  letter-spacing: 20px;
 }
 .pick-favorite__text h2 strong:nth-child(2) {
-  font-size: 133px;
-
-  background: blue;
+  letter-spacing: 20px;
+  @include basekick(5, 27, 0.11, 27, 5, 0.75);
 }
 .pick-favorite__text h2 span {
-  background: blue;
-  font-size: 100px;
+  letter-spacing: 12px;
+  @include basekick(5, 15, 0.11, 15, 5, 0.75);
 }
 
 .pick-favorite__text h3 {
@@ -55,7 +51,7 @@
   height: 84px;
   word-break: keep-all;
   color: #fffcf9;
-  margin: 44px 0 0 0;
+  margin: 22px 0 0 0;
 }
 .pick-favorite__menu-list {
   width: 391px;
