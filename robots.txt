@@ -1,3 +1,0 @@
-User-agent: *
-Allow: /
-Sitemap: https://cafe-w.netlify.app/sitemap.xml
