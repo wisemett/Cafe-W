@@ -1,0 +1,207 @@
+.season-item {
+  background-color: #F3D6B0;
+  display: flex;
+  justify-content: center;
+  height: 600px;
+  position: relative;
+}
+
+.season-item__wrapper {
+  width: 1200px;
+  position: relative;
+}
+
+.season-item h2 {
+  visibility: hidden;
+}
+
+.catchphrase {
+  text-align: center;
+  width: 402px;
+  height: 397px;
+  padding-left: 100px;
+  padding-top: 80px;
+  display: flex;
+  flex-flow: column;
+  align-items: center
+}
+
+.season-item__phrase {
+  margin: 0;
+  color: #a37356;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 40px;
+  letter-spacing: 0.1em;
+  width: 397px;
+  height: 49px;
+}
+
+.season-item__phrase span {
+  &::before {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 1px;
+    margin-bottom: 10px;
+    background: #a37356;
+    margin-right: 15px;
+  }
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 160px;
+    height: 1px;
+    margin-bottom: 10px;
+    background: #a37356;
+    margin-left: 15px;
+  }
+}
+
+.season-item__phrase strong {
+  margin: 0;
+  color: #e27762;
+  display: block;
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 81px;
+  letter-spacing: 0.1em;
+  padding-top: 10px;
+}
+
+.season-item__phrase-ko {
+  margin: 0;
+  color: #a37356;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px;
+  letter-spacing: 0em;
+  margin-top: 210px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #a37356;
+  width: 397px;
+}
+
+.season-item__details {
+  display: block;
+  margin: 0;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  letter-spacing: 0em;
+  border: 2px solid #e27762;
+  border-radius: 3px;
+  padding: 10px 25px;
+  text-decoration: none;
+  color: #e27762;
+  margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 128px;
+  height: 36px;
+}
+
+.season-item__beverage {
+  position: absolute;
+  top: 100px;
+}
+.season-item__beverage-pin{
+  position: relative;
+}
+.season-item__beverage li {
+  list-style: none;
+  position: absolute;
+}
+.season-item__beverage-strawberry-pin{
+  position: relative;
+  left: 40px;
+}
+.season-item__beverage-choux-pin{
+  position: relative;
+  left: 60px;
+}
+.season-item__beverage-spring-pin{
+  position: relative;
+  left: 80px;
+}
+.season-item__beverage-strawberry img {
+  width: 283px;
+  position: absolute;
+  left: 347px;
+  bottom: 30px;
+}
+
+.season-item__beverage-choux img {
+  width: 283px;
+  position: absolute;
+  left: 566px;
+  bottom: 121px;
+}
+
+.season-item__beverage-spring img {
+  width: 223px;
+  position: absolute;
+  left: 804px;
+  bottom: -7px;
+  
+}
+.season-item__beverage [class$="bold"] {
+  display: block;
+  color: #412311;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0.1em;
+  width: 471px;
+}
+.season-item__beverage [class$="normal"] {
+  display: block;
+  color: #5F4C4C;
+  font-size: 21px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px;
+  letter-spacing: 0em;
+  width: 270px;
+}
+.season-item__beverage figcaption {
+  text-align: center;
+  width: 471px;
+  height: 91px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+}
+.season-item__beverage-strawberry figcaption {
+  position: absolute;
+  left: 350px;
+  bottom: -60px;
+}
+
+.season-item__beverage-choux figcaption {
+  position: absolute;
+  left: 485px;
+  bottom: 380px;
+}
+
+.season-item__beverage-spring figcaption {
+  position: absolute;
+  left: 740px;
+  bottom: 220px;
+}
+.season-item__beverage-strawberry-pin span{
+  margin-bottom: 10px;
+}
+.season-item__beverage-choux-pin span{
+  margin-bottom: 10px;
+}
+.season-item__beverage-spring-pin span{
+  margin-bottom: 10px;
+}
