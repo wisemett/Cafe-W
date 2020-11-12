@@ -3,28 +3,32 @@
     border: 1px solid #CBC5BE;
     text-align: center;
     margin: 100px auto;
-    // background: #FFFCF9, url(../../assets/images/sign-in-page-photo/barista/Barista.jpg) no-repeat;
-    background-size: auto 392px;
-    background-position: right -10px bottom -130px;
     width: 742px;
+    border-bottom: 1px solid #CBC5BE;
 }
 .sign-up__header {
     width: 660px;
     text-transform: uppercase;
     margin: 25px auto;
 }
-
 .sign-up__heading {
-    width: 660px;
+    font-size: 32px;
+    font-style: normal;
     font-weight: 700;
-    font-size: 3.2rem;
-    line-height: 1.4;
-    letter-spacing: 0.1;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+    text-align: center;
+    color: #7D6F5D;
 }
-
 .sign-up__intro {
     font-size: 1.6rem;
     line-height: 1.6;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0em;
+    text-align: center;
+    color: #7D6F5D;
 }
 .sign-up__form {
     padding: 40px 152px 50px;
@@ -32,36 +36,312 @@
     color: #7D6F5D;
     line-height: 1.2;
     font-size: 1.3rem;
-
+    width: 742px;
+    height: 1405px;
 }
+
 .sign-up__form::before {
     content: '';
     display: block;
+    background-image: url('../assets/images/sign-up-page-photo/barista/Barista\ Girl.png');
+    background-position: 0% 0%;
+    background-size: 120%;
+    background-repeat: no-repeat;
     height: 105px;
-    // background: url(../assets/images/sign-up-page-photo/barista/Barista\ Girl.jpg) center no-repeat;
+    width: 76px;
+    position: relative;
+    left: 180px;
+    
 }
-.sign-up__form label,
-.sign-up__birth span,
-.sign-up__auth span {
-    font-size: 1.4rem;
+.sign-up__form::after {
+    content: '';
+    display: block;
+    background-image: url('../assets/images/sign-up-page-photo/barista/Barista.png');
+    background-position: 0px 0px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 134px;
+    position: relative;
+    left: 450px;
+    bottom: 240px;
+}
+.sign-up__form fieldset{
+    width: 438px;
+    height: 1200px;
+}
+.sign-up__form legend {
+    display: none;
+}
+//label 정리
+.sign-up__user-id label, .sign-up__user-pw label,
+.sign-up__user-pw-check label, .sign-up__user-name label,
+.sign-up__user-gender label, .sign-up__birth span, 
+.sign-up__phone-number label, .sign-up__auth span,
+.sign-up__nickname label, .sign-up__terms label,
+.sign-up__user-name label, .sign-up__user-gender label,
+.sign-up__birth span{
+    padding-left: 6px;
+    font-size: 14px;
+    font-style: normal;
     font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    width: 438px;
+    height: 17px;
+    display: block;
+    margin-bottom: 10px;
 }
-.sign-up__tip {
-    line-height: 1.4;
+.sign-up__nickname label{
+    margin-top: 23px;
 }
-
-.auto-bold {
-    font-weight: 700;
-    line-height: 1.1;
-    font-size: 1.4rem;
+.sign-up__user-name label,
+.sign-up__user-gender label{
+    width: 209px;
 }
-.sign-up__auto {
+.sign-up__user-gender label{
+    margin-left: 10px;
+}
+.required-star{
+    width: 6px;
+    height: 6px;
+    position: relative;
+    bottom: 7px;
+}
+//input 정리
+.sign-up__user-id input, .sign-up__user-pw input,
+.sign-up__user-pw-check input, .sign-up__phone-number input{
+    width: 438px;
+    height: 34px;
+    margin-bottom: 23px;
+    border: 1px solid #CBC5BE;
+    border-radius: 3px;
+    color: #7D6F5D;
+    background-color: #fff;
+}
+.sign-up__user-name input {
+    width: 209px;
+    height: 34px;
+    border: 1px solid #CBC5BE;
+    border-radius: 3px;
+    color: #7D6F5D;
+    background-color: #fff;
+}
+.sign-up__user-gender input{
+    margin: 0;
+    width: 18px;
+    height: 18px;
+    line-height: 20px;
+    float: left;
+}
+// 생년월일(label, input)
+.sign-up__birth{
+    margin-top: 23px;
+    width: 361px;
+    height: 57px;
+}
+.sign-up__birth select{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #7D6F5D;
+    background-color: #fff;
+    margin: 0;
+    padding: 0;
+    border: 1px solid #CBC5BE;
+    border-radius: 3px;
+    padding: 3px 30px 5px 2px;
+    float: left;
+    margin-right: 10px;
+}
+.sign-up__nickname input{
+    width: 286px;
+    height: 34px;
+    float: left;
+    border: 1px solid #CBC5BE;
+    border-radius: 3px;
+    color: #7D6F5D;
+    background-color: #fff;
+}
+// 성별 label,input 관리
+.gender-flex{
+    display: flex;
+    flex-flow: row nowrap;
+    margin-top: 10px;
+    margin-left: 20px;
+    align-items: center;
+}
+.gender-flex input{
+    margin-right: 5px;
+    display: block;
+}
+.gender-flex-woman{
+    margin-right: 15px;
+}
+.sign-up__user-name, .sign-up__user-gender {
+    display: flex;
+    flex-flow: column nowrap;
+} 
+.name-gender-flex{
+    display: flex;
+    flex-flow: row nowrap;
+}
+// 회원가입 완료 후 부분
+.after-sign-up{
+    position: relative;
+}
+.sign-up__tip{
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 23px;
+    padding-left: 15px;
+}
+.star-brown{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 10%;
+    left: 0;
+}
+// 휴대폰, 데스크탑 인증 부분
+.sign-up__verify-auth{
+    width: 438px;
     height: 230px;
-    border: 1px solid rgba(125, 111, 93, 0.5);
+    border: 1px solid #CBC5BE;
+    background: #FFFFFF;
+    border-radius: 3px;
+    position: relative;
+}
+.sign-up__verify-auth-phone{
+    width: 219px;
+    height: 230px;
+    // background: floralwhite;
+}
+.sign-up__verify-auth-ipin{
+    width: 219px;
+    height: 230px;
+    // background: lavenderblush;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.sign-up__verify-auth li{
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+    padding-bottom: 22px;
+}
+.sign-up__verify-auth-phone::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 200px;
+    background: #CBC5BE;
+    position: absolute;
+    left: 50%;
+    top: 5%;
+}
+.sign-up__verify-auth-phone img, 
+.sign-up__verify-auth-ipin img{
+    margin-bottom: 20px;
+}
+.auth-bold{
+    margin-bottom: 6px;
+    font-weight: 700;
+}
+.auth-bold-text{
+    margin-bottom: 10px;
+    width: 135px;
+}
+.sign-up__verify-auth-phone a,
+.sign-up__verify-auth-ipin a{
+    display: block;
+    padding: 7px 25px;
+    background: #7D6F5D;
     border-radius: 3px;
 }
-.sign-up__terms textarea {
-    font-size: 1.2rem;
+// 선택적 개인정보 수집동의
+.sign-up__terms{
+    width: 438px;
+    margin-top: 67px;
+}
+textarea{
+    font-size: 12px;
+    color: #7D6F5D;
     line-height: 1.5;
-    padding: 17px;
+    background: #FFFCF9;
+    width: 438px;
+    padding: 17px 17px 0 17px;
+    border: 1px solid rgba(125, 111, 93, 0.3);
+    border-radius: 3px;
+}
+.sign-up__terms{
+    position: relative;
+}
+.terms__star-brown{
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.sign-up__terms-accept{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: left;
+    display: block;
+    margin-bottom: 20px;
+    padding-left: 15px;
+}
+.sign-up__button{
+    width: 438px;
+    height: 46px;
+    background: #7D6F5D;
+    color: #fff;
+}
+// .sign-up__terms-accept {
+//     z-index: 5;
+// }
+// .sign-up__toggle {
+//     z-index: -5;
+// }
+.sign-up__toggle .toggle{
+    width: 34px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: rgba(207, 204, 199, 0.5);
+    z-index: -5;
+}
+.sign-up__toggle .toggle::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #cfccc7;
+    left: -3px;
+    transition: all 0.2s;
+}
+.sign-up__toggle > input:checked + .toggle {
+    background-color: rgba(126, 112, 93, 0.6);
+}
+.sign-up__toggle > input:checked + .toggle::before {
+    background-color: #7D6F5D;
+    transform: translateX(20px);
 }
