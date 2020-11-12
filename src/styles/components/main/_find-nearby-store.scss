@@ -49,6 +49,13 @@
     line-height: 1;
     text-align: center;
     margin-top: 30px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+//버튼 호버 애니메이션
+.find-nearby__text a:hover {
+    color:#ccc;
+    border-color: #ccc;
 }
 //리저브 메달 벡터이미지
 .find-nearby__medal {
@@ -75,6 +82,33 @@
     position: absolute;
     bottom: 0;
     right: 24.305555555%;
+}
+//카페 벡터이미지 흔들리는 애니메이션
+.find-nearby__cafe:hover {
+    animation: greeting 0.6s ease-in;
+}
+@keyframes greeting {
+    0% {
+        transform: rotate(0);
+    }
+    10% {
+        transform: rotate(-5deg);
+    }
+    30% {
+        transform: rotate(5deg);
+    }
+    50% {
+        transform: rotate(-5deg);
+    }
+    70% {
+        transform: rotate(5deg);
+    }
+    90% {
+        transform: rotate(-5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
 }
 //좌측 하단 사진 영역
 .find-nearby__visual {

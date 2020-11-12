@@ -55,6 +55,7 @@ header {
     height: 40px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 5;
 }
 //헤더 상단 컨테이너
 .header__member-and-search {
@@ -72,10 +73,14 @@ header {
 }
 .header__sign-group a {
     padding: 10px;
+    transition: all 0.2s;
 }
-
 .header__sign-group li:first-child {
     margin-right: 30px;
+}
+// 회원 링크 호버 애니메이션
+.header__sign-group a:hover {
+    color: #ccc;
 }
 //헤더 우상단 검색 영역
 .header__search-form {
@@ -110,6 +115,10 @@ header {
     padding: 8px;
     height: 40px;
     cursor: pointer;
+    transition: all 0.5s;
+}
+.header__btn-search:hover {
+    transform: scale(1.3);
 }
 //헤더 네비게이션
 .nav {
@@ -128,7 +137,7 @@ header {
     width: 180px;
     height: 101px;
 }
-.nav__main-menu-list button {
+.nav__main-menu-list .nav__btn-menu {
     font-weight: 700;
     font-size: 2rem;
     height: 20px;
@@ -140,4 +149,11 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.nav__sub-menu-list a {
+    transition: 0.2s;
+}
+// 서브메뉴 호버 애니메이션
+.nav__sub-menu-list a:hover {
+    font-weight: 700;
 }

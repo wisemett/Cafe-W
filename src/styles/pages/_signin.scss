@@ -1,0 +1,221 @@
+//전체 배경
+.sign-in {
+    // background: url(../assets/images/sign-in-page-photo/background.jpg);
+    background-size: cover;
+    color: #7D6F5D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//흰색 컨테이너
+.sign-in__container {
+    width: 742px;
+    background-color: #FFFCF9;
+    background-image: url(../assets/images/sign-in-page-photo/barista/Barista-signin.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    box-shadow: 0px 15px 14px rgba(70, 55, 17, 0.4);
+    border-radius: 6px;
+    text-align: center;
+    margin: 100px 140px;
+}
+
+//헤더
+.sign-in__header {
+    width: 660px;
+    text-transform: uppercase;
+    margin: 25px auto;
+}
+
+.sign-in__heading {
+    width: 660px;
+    font-weight: 700;
+    font-size: 3.2rem;
+    line-height: 1.4;
+    letter-spacing: 0.1em;
+}
+
+.sign-in__intro {
+    font-size: 1.6rem;
+    line-height: 1.6;
+}
+
+//로그인 폼
+.sign-in__form {
+    border-top: 1px solid #7D6F5D;
+    border-bottom: 1px solid #7D6F5D;
+    padding: 32px 152px;
+    text-align: left;
+}
+
+//아이디 비밀번호
+.sign-in__user-id {
+    margin-bottom: 20px;
+}
+
+.sign-in__user-id label,
+.sign-in__user-pw label {
+    font-weight: 700;
+    font-size: 1.4rem;
+    line-height: 1.2;
+}
+
+.sign-in__user-id input,
+.sign-in__user-pw input {
+    width: 438px;
+    margin-top: 10px;
+    padding: 9px;
+    font-size: 1.3rem;
+    line-height: 1.2;
+    border: 1px solid rgba(125, 111, 93, 0.5);
+    border-radius: 3px;
+}
+
+.sign-in__user-id input::placeholder,
+.sign-in__user-pw input::placeholder {
+    color: rgba(125, 111, 93, 0.7);
+}
+
+//로그인 버튼
+.sign-in__button {
+    color: #FFFCF9;
+    width: 100%;
+    text-align: center;
+    padding: 15px 8px;
+    font-weight: 700;
+    font-size: 1.6rem;
+    line-height: 1;
+    margin: 30px 0;
+    background: #7D6F5D;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+//아이디 저장 토글
+.sign-in__toggle {
+    display: flex;
+    margin-bottom: 24px;
+}
+.sign-in__toggle input {
+    display: none;
+}
+.sign-in__toggle label {
+    font-size: 1.4rem;
+    line-height: 1;
+    padding-left: 45px;
+    position: relative;
+    z-index: 5;
+}
+.sign-in__toggle label:last-of-type {
+    left: 100px;
+}
+.sign-in__toggle .toggle {
+    width: 34px;
+    height: 14px;
+    display: inline-block;
+    border-radius: 8px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(207, 204, 199, 0.5);
+}
+.sign-in__toggle .toggle::before {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    top: -3px;
+    border-radius: 50%;
+    position: absolute;
+    background-color: #cfccc7;
+    left: -3px;
+    transition: all 0.2s;
+}
+//토글 애니메이션
+.sign-in__toggle > input:checked + label .toggle {
+    background-color: rgba(126, 112, 93, 0.6);
+}
+.sign-in__toggle > input:checked + label .toggle::before {
+    background-color: #7D6F5D;
+    transform: translateX(20px);
+}
+//두줄짜리
+.sign-in__info-list li {
+    display: flex;
+}
+
+.sign-in__info-list li::before {
+    content: '★';
+    display: block;
+    font-size: 1rem;
+    padding-top: 2px;
+    margin-right: 5px;
+}
+
+.sign-in__security,
+.sign-in__browser {
+    font-size: 1.2rem;
+    line-height: 1.4;
+}
+
+.sign-in__security {
+    margin-bottom: 6px;
+}
+
+//바리스타 이미지
+.man-barista {
+    position: absolute;
+    bottom: 0;
+}
+
+//멤버 메뉴
+.sign-in__member {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.6rem;
+    line-height: 1;
+    color: #7D6F5D;
+    margin: 0 auto;
+}
+
+.sign-in__member li {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+
+
+.sign-in__member li::after {
+    content: '|';
+    color: #7D6F5D;
+    margin: auto 0;
+    opacity: 0.7;
+}
+
+.sign-in__member li:last-child::after {
+    content: '';
+}
+
+.sign-in__member a {
+    display: block;
+    padding: 5px 0;
+    color: #7D6F5D;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin: 10px 16px;
+    width: 93px;
+    text-align: center;
+    opacity: 0.7;
+    transition: all 0.2s;
+}
+// 멤버 메뉴 호버 애니메이션
+.sign-in__member a:hover {
+    opacity: 1;
+}
+
+//배경 별 로고
+.sign-in__left-star {
+    order: -1;
+}

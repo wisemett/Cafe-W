@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html src/sign-in.html src/sign-up.html -d build",
-    "build": "parcel src/index.html src/sign-in.html src/sign-up.html build --public-url ./",
+    "build": "parcel build src/index.html src/sign-in.html src/sign-up.html --public-url ./",
     "lighthouse": "npx lighthouse --view http://localhost:1234/ --output-path ./reports/index.html"
   },
   "repository": {

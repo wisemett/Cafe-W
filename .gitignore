@@ -1,5 +1,7 @@
 node_modules
-dist
+dist/*
+!dist/robots.txt
+!dist/sitemap.xml
 build
 .cache
 reports
