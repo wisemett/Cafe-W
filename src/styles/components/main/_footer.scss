@@ -9,12 +9,15 @@ footer {
 //위로 가기 버튼
 .btn-go-up {
     position: absolute;
-    top: -80px;
-    right: 30px;
-    fill: #E27762;
+    top: -100px;
+    right: 20px;
     cursor: pointer;
+    display: block;
+    width: 90px;
+    height: 90px;
+    background: url('../assets/images/main-page-photo/8-row/GotoTop\ Button.png') no-repeat;
+    background-size: auto;
 }
-
 //푸터 네비게이션
 .footer__menu-list {
     display: flex;
