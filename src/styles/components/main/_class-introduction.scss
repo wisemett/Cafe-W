@@ -121,6 +121,7 @@
   width: 459px;
   height: 220px;
   background: #FFFCF9;
+  position: relative;
 }
 
 .class-intro__favorite h3 {
@@ -175,15 +176,15 @@
   text-align: left;
 }
 
-.class-intro__favorite-list svg {
+.class-intro__favorite svg {
   width: 17px;
   height: 17px;
 }
 
-.class-intro__favorite-list .more {
+.class-intro__favorite .more {
   position: absolute;
-  top: -30px;
-  right: -340px;
+  top: 34px;
+  right: 25px;
 }
 
 .class-intro__brochure {
