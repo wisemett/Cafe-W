@@ -21,12 +21,12 @@
 
 - localhost 환경과 다르게 호스팅된 페이지에서 lighthouse 벤치마킹 결과 이미지를 불러오는 데 큰 부하가 발생하는 것을 확인.
 - `.jpeg`,`.png` 및 svg 파일에 대한 최적화가 필요하다 판단하게 되었음.
-- 자세한 사항은 [발표 자료]() 참조
+- 자세한 사항은 [발표 자료](https://slides.com/baek2back/deck) 참조
 
 ## Accessibility
 
 - 가급적 접근성을 고려하여 마크업을 진행하였으나 lighthouse 벤치마킹 결과 누락된 요소들이 존재하였음.
-- 수정된 요소에 대한 사항은 [발표 자료]() 참조.
+- 수정된 요소에 대한 사항은 [발표 자료](https://slides.com/baek2back/deck) 참조.
 
 ## Built With
 
