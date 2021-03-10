@@ -1,6 +1,7 @@
 # Cafe-W
 
-![cafe-w-main](files/img/cafe-w-main.png)
+## Demo Video
+![cafe-w-main](files/img/demo.gif)
 
 ## 소개
 
