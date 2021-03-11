@@ -53,4 +53,4 @@ $ npm run-script build # dist 폴더에 빌드된 결과물이 생성
 
 - 김성백 [@baek2back](https://github.com/)
 - 탁진호 [@sofreshian](https://github.com/sofreshian)
-- 박재운 [@fe-kid](https://github.com/fe-kid)
+- 박재운 [@frontendpark](https://github.com/frontendpark)
